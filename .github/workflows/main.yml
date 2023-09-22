@@ -1,0 +1,15 @@
+# Your workflow name.
+name: Deploy to production.
+# Run workflow on every push to main or d
+branch.
+on:
+push:
+branches: [main, dev]
+# Your workflows jobs.
+jobs:
+say-hello:
+runs-on: ubuntu-latest
+steps:
+- name: Greet
+run: echo "Hello"
+test:
